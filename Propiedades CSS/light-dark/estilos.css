@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root[data-theme="light"]{
+    --sun-icon-show: none;
+    --moon-icon-show: block;
+    --button-color-toggle: #0f172b;
+    --fill-color-icon: white;
+    --background-project: #f2f2f2;
+    --background-card: #D7F9FF;
+    --color-title: black;
+    --color-paragraph: black;
+}
+:root[data-theme="dark"]{
+    --sun-icon-show: block;
+    --moon-icon-show: none;
+    --button-color-toggle: #2aa5e9;
+    --fill-color-icon: white;
+    --background-project: #0f172b;
+    --background-card: #283548;
+    --color-title: white;
+    --color-paragraph: white;
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 90px;
+    background-color: var(--background-project);
+    transition: background-color .5s;
+}
+
+.toggle-mode{
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    background-color: var(--button-color-toggle);
+
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+
+    display: grid;
+    grid-template-areas: "imagen";
+    place-items: center;
+}
+.img-mode{
+    grid-area: imagen;
+    fill: var(--fill-color-icon);
+}
+.light{
+    display: var(--sun-icon-show);
+}
+.dark{
+    display: var(--moon-icon-show);
+}
+.card{
+    width: 350px;
+    background-color: var(--background-card);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.card-card__texts{
+    padding: 20px 0;
+}
+.card__img{
+    width: 100%;
+}
+.card__title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-title);
+}
+.card__paragraph{
+    color: var(--color-paragraph)
+}

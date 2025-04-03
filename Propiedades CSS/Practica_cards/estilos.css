@@ -1,0 +1,59 @@
+:root{
+
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 90px;
+}
+
+[data-info="html"]{
+    --color-base: #de4b25;
+}
+[data-info="css"]{
+    --color-base: #2e53e5;
+}
+[data-info="js"]{
+    --color-base: #dac50b;
+}
+.cards{
+    display: grid;
+    gap: 2rem;
+}
+
+.cards__item{
+    --color-border-card: var(--color-base, #000);
+    --color-titulo-card: var(--color-base, #000);
+    --color-fill-icon: var(--color-base, #000);
+
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px -5px rgb(0 0 0 / .5);
+    padding: 2rem;
+    border-top: 5px solid var(--color-border-card);
+    
+}
+.card__title{
+    color: var(--color-base);
+    font-size: 2rem;
+}
+.card__paragraph{
+    margin: 10px 0;
+}
+.cards__icon{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    fill: var(--color-fill-icon);
+
+}
+
+/* 
+#de4b25
+#2e53e5
+#dac50b 
+*/
