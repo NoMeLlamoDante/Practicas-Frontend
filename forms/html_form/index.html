@@ -12,17 +12,22 @@
             <h1>Formulario de registro</h1>
             <div class="form-group">
                 <label for="username">Usuario: </label>
-                <input type="text" placeholder="Inserte nombre de usuario" id="username">
+                <input type="text" placeholder="Inserte nombre de usuario" id="#username" oninput="validarUsuario(this.value);" pattern="[a-zA-Z][A-Za-z0-9\-_]{5,19}" required>
+                <ul class="user-conditions">
+                    <li id="#user_1">El usuario debe tener 6 y 20 caracteres</li>
+                    <li id="#user_2">Empezar por una letra</li>
+                    <li id="#user_3">Acepta letras, numeros, '-' y '_' </li>
+                </ul>
             </div>
             <div class="form-group">
                 <label for="email">Correo electrónico: </label>
-                <input type="email" placeholder="Inserte un correo valido" id="email">
+                <input type="email" placeholder="Inserte un correo valido" id="email" required>
             </div>
             <div class="form-group">
                 <label for="password">Contraseña: </label>
-                <input type="password" placeholder="Inserte contraseña" id="password">
+                <input type="password" placeholder="Inserte contraseña" id="password" required>
             </div>
-            <button type="submit">Registrar</button>
+            <button type="submit" disabled>Registrar</button>
             
         </form>
     </div>
