@@ -23,7 +23,7 @@ body{
 .container{
     width: 50%;
     max-width: 400px;
-    height: 80%;
+    /* height: 80%; */
     max-height: 500px;
     display: inline-block;
 }
@@ -65,6 +65,7 @@ input{
     border: none;
     border-bottom: 2px dashed violet;
     transition: border-bottom .5s;
+    width: 100%;
 }
 input:focus{
     outline: none;
@@ -74,3 +75,25 @@ input:focus{
     border-right: 5px double var(--succes_color);
     
 }
+.input-form{
+    display: flex;
+    width: 100%;
+}
+.visibility{
+    display: inline;
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+    /* border-radius: 0; */
+    /* width: fit-content; */
+    color: inherit;
+    border: none;
+    font-size: .8rem;
+}
+.material-symbols-outlined{
+    font-size: 1rem;
+    line-height: normal;
+    justify-self: center;
+    align-self: center;
+}
+
