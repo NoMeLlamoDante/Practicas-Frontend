@@ -12,16 +12,23 @@
             <h1>Formulario de registro</h1>
             <div class="form-group">
                 <label for="username">Usuario: </label>
-                <input type="text" placeholder="Inserte nombre de usuario" id="#username" oninput="validarUsuario(this.value);" pattern="[a-zA-Z][A-Za-z0-9\-_]{5,19}" required>
+                <input type="text" placeholder="Inserte nombre de usuario" id="username" oninput="validarUsuario(this.value);" pattern="[a-zA-Z][A-Za-z0-9\-_]{5,19}" required>
                 <ul class="user-conditions">
-                    <li id="#user_1">El usuario debe tener 6 y 20 caracteres</li>
-                    <li id="#user_2">Empezar por una letra</li>
-                    <li id="#user_3">Acepta letras, numeros, '-' y '_' </li>
+                    <li id="user_1">Debe tener de 6 a 20 caracteres</li>
+                    <li id="user_2">Empezar por una letra</li>
+                    <li id="user_3">Acepta letras, numeros, '-' y '_' </li>
                 </ul>
             </div>
             <div class="form-group">
                 <label for="email">Correo electrónico: </label>
-                <input type="email" placeholder="Inserte un correo valido" id="email" required>
+                <input type="email" oninput="validarCorreo(this.value);" placeholder="Inserte un correo valido" id="email" pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" required>
+                <ul class="email-conditions">
+                    <li class="" id="mail_1">Debe tener de 6 a 30 caracteres</li>
+                    <li class="" id="mail_2">
+                        Formato: "<span class="exampole">ejemplo</span><span class="symbol">@</span><span class="domain">dominio</span><span class="level">.nivel</span>"
+                    </li>
+                    <li class="" id="mail_3">Acepta letras, números y '.-_' </li>
+                </ul>
             </div>
             <div class="form-group">
                 <label for="password">Contraseña: </label>
