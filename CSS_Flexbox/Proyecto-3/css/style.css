@@ -1,0 +1,29 @@
+:root{
+    /* Primary */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    
+    /* Accent */
+    --bright-blue: hsl(224, 93%, 58%);
+    --Moderate-cyan: hsl(170, 45%, 43%);
+    
+    /* Neutral */
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+
+    /* Headings, Call-to-actions, Header Navigation 400, 700 */
+    --font-heading: "Raleway", sans-serif;
+    /* body 400 */
+    --font-body: "Open Sans", sans-serif;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--font-body);
+    font-weight: 400;
+}
