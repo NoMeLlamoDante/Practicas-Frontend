@@ -295,4 +295,25 @@ body{
         font-size: 2.7rem;
     }
 
+    /* different */
+    .different{
+        text-align: left;
+    }
+
+    .title-different::before{
+        margin: 0;
+    }
+
+    .different__items{
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .different__item{
+        flex: 1;
+    }
+
+    .different__icon{
+        margin-left: 0;
+    }
 }
