@@ -97,3 +97,50 @@ body{
     color: white;
     padding: .8em 2em;
 }
+
+/* different */
+.different{
+    text-align: center;
+}
+
+.title-different{
+    position: relative ;
+}
+
+.title-different::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    left: 0;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--dark-grayish-violet);
+    width: 120px;
+    height: 1px;
+}
+
+.different__items{
+    margin-top: 3.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.different__icon{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.different__title{
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.different__paragraph{
+    margin-top: 1em;
+    line-height: 1.5;
+    color: var(--dark-grayish-violet)
+}
