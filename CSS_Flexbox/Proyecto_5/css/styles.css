@@ -82,6 +82,7 @@ body{
     font-size: 2.5rem;
     font-family: var(--font-heading);
     letter-spacing: 3px;
+    font-weight: 600;
 }
 
 .hero__paragraph{
@@ -143,4 +144,88 @@ body{
     margin-top: 1em;
     line-height: 1.5;
     color: var(--dark-grayish-violet)
+}
+
+/* find */
+.find{
+    padding: 80px 0;
+    --padding-container: 60px 0
+}
+
+.find__container{
+    color: white;
+    position: relative;
+    background-color: var(--dark-violet);
+    text-align: center;
+    z-index: 1;
+}
+
+.find__container::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+    background-size: cover;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.title-find{
+    font-size: 2.5rem;
+}
+
+/* footer */
+.footer{
+    background-color: var(--very-light-gray);
+}
+.footer__brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/bg-pattern-footer-mobile.svg');
+    gap: 1.5em;
+
+    padding-bottom: 2.5em;
+    margin-bottom: 2.5em;
+
+    border-bottom: 1px solid var(--dark-grayish-violet);
+}
+
+.footer__logo, .footer__icon{
+    display: block;
+}
+
+.footer__media{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: var(--dark-violet);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer__link-first{
+    margin-bottom: 1em;
+    color: var(--dark-grayish-violet);
 }
