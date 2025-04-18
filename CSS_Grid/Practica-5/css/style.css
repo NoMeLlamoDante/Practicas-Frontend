@@ -1,0 +1,16 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Grey-200: hsl(0, 0%, 85%);
+    --font-josefin: 300 Josefin Sans, sans-serif;
+    --font-alata: 400 Alata, sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+}
