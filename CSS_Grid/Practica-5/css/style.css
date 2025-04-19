@@ -326,4 +326,39 @@ footer{
         width: 50%;
     }
 
+    /* footer */
+    footer{
+        background-color: var(--Black);
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(2, max-content);
+        grid-template-areas: 
+        "logo social"
+        "links copy"
+        ;
+        row-gap: 3em;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__logo{
+        grid-area: logo;
+        justify-self: start;
+    }
+    .footer__links{
+        margin: 0;
+        grid-area: links;
+        grid-auto-flow: column;
+        gap: 1.2em;
+    }
+    .footer__nav{
+        grid-area: social;
+        justify-self: end;
+    }
+
+    .footer__copy{
+        margin-top: 0;
+        grid-area: copy;
+    }
 }
