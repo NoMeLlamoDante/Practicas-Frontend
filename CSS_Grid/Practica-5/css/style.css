@@ -304,4 +304,26 @@ footer{
         font-size: 2.8rem;
     }
 
+    /* gallery */
+    .gallery{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-content: space-between;
+    }
+
+    .gallery__cta{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .gallery__container{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .gallery__picture::after{
+        width: 50%;
+    }
+
 }
