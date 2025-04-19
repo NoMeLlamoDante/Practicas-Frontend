@@ -199,5 +199,44 @@ body{
     height: 100%;
     object-fit: cover;
     grid-area: show;
+}
 
+/* footer */
+footer{
+    background-color: var(--Black);
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    justify-items: center;
+}
+
+.footer__links{
+    margin: 2.5em 0;
+    display: grid;
+    gap: 1.7em;
+    padding: 0;
+}
+
+.footer__list{
+    list-style: none;
+}
+
+.footer__link{
+    color: var(--White);
+    text-decoration: none;
+}
+
+.footer__nav{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.footer__copy{
+    margin-top: 1.5em;
+    color: var(--Grey-200);
 }
